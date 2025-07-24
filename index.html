@@ -1,71 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Personal Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <div class="container">
-    <aside class="sidebar">
-      <div class="top">
-        <img src="https://i.imgur.com/Hp6iZCy.png" alt="Avatar" class="avatar"/>
-        <div class="status">Available for work</div>
-        <h2>I'm Brian Do</h2>
-        <p>Product designer from Jakarta, ID.<br>Currently designing at Rectangle.</p>
-        <div class="buttons">
-          <button class="btn hire">Hire Me</button>
-          <button class="btn copy">Copy Email</button>
+  <header class="navbar">
+    <div class="container">
+      <h1>My Portfolio</h1>
+      <nav>
+        <div class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      </div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="darkModeToggle">🌓</button>
+    </div>
+  </header>
 
-      <div class="projects">
-        <h3>Projects</h3>
-        <div class="project-card">
-          <div class="icon purple">◉</div>
-          <div class="info">
-            <h4>Rectangle</h4>
-            <p>Product design, Icon design</p>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="icon dark">M</div>
-          <div class="info">
-            <h4>Morva Labs</h4>
-            <p>Visual design, Branding</p>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="icon orange">⚡</div>
-          <div class="info">
-            <h4>Simply</h4>
-            <p>Landing page, Illustration</p>
-          </div>
-        </div>
-      </div>
-    </aside>
+  <section id="about" class="section container">
+    <h2>About Me</h2>
+    <p>Hello! I'm a researcher and developer passionate about innovation and impactful technology.</p>
+  </section>
 
-    <main class="content">
-      <div class="project-detail">
-        <div class="meta">
-          <div><strong>Client:</strong> Goven Soven</div>
-          <div><strong>Company:</strong> Rectangle</div>
-          <div><strong>Project Type:</strong> Product design, Icon design</div>
-          <div><strong>Year:</strong> 2023</div>
-        </div>
+  <section id="education" class="section container">
+    <h2>Education</h2>
+    <p>Bachelor of Science in Computer Science - Example University</p>
+  </section>
 
-        <h2>Rectangle</h2>
-        <p>
-          An innovative platform that empowers businesses to efficiently manage
-          their workforce, delivering a seamless user experience while
-          distinguishing itself from competitors.
-        </p>
-        <a href="#" class="visit-btn">Visit Website →</a>
+  <section id="research" class="section container">
+    <h2>Research</h2>
+    <p>Research in Computer Vision, AI for Social Good, and Environmental Sensing.</p>
+  </section>
 
-        <img src="https://i.imgur.com/X5BAxSO.png" alt="Project preview" class="preview-img"/>
-      </div>
-    </main>
-  </div>
+  <section id="portfolio" class="section container">
+    <h2>Portfolio</h2>
+    <div class="project">
+      <h3>Project A</h3>
+      <p>A web application for tracking environmental changes using drone imagery.</p>
+    </div>
+    <div class="project">
+      <h3>Project B</h3>
+      <p>A deep learning model for recognizing player movement in sports videos.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section container">
+    <h2>Contact Me</h2>
+    <p>Email: yourname@example.com</p>
+    <a class="btn" href="mailto:yourname@example.com">Send Email</a>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
