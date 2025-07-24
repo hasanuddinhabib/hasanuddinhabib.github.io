@@ -161,3 +161,150 @@ body {
   max-width: 960px;
   margin: 0 auto;
 }
+
+/* buat yg ourservices */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fafc;
+  color: #1a1a1a;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-content {
+  flex: 1 1 55%;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 1rem 0;
+  line-height: 1.2;
+}
+
+.hero-content h1 span {
+  color: #6b7280;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  color: #4b5563;
+  max-width: 500px;
+}
+
+.badge {
+  background-color: #f0f0f5;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.btn {
+  margin-top: 1.5rem;
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #333;
+}
+
+.track-record {
+  flex: 1 1 40%;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  max-width: 400px;
+}
+
+.track-record h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.track-record .subtext {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.stats div strong {
+  font-size: 1.5rem;
+  display: block;
+  font-weight: 700;
+}
+
+.stats div span {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.services {
+  background-color: #f9fafc;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.services h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.services ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem 1.5rem;
+}
+
+.services ul li {
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-content h1 {
+    font-size: 2.3rem;
+  }
+
+  .track-record {
+    width: 100%;
+    max-width: none;
+  }
+}
+/* sampai sini our services */
