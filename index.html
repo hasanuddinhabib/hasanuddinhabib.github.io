@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Website Pribadi</h1>
+    <nav>
+      <ul>
+        <li><a href="#profile">Profil</a></li>
+        <li><a href="#education">Riwayat Pendidikan</a></li>
+        <li><a href="#research">Riwayat Penelitian</a></li>
+        <li><a href="#portfolio">Portofolio</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="profile">
+    <h2>Profil</h2>
+    <p>Nama: Hasanuddin Al-Habib<br>Profesi: Dosen dan Peneliti</p>
+  </section>
+
+  <section id="education">
+    <h2>Riwayat Pendidikan</h2>
+    <ul>
+      <li>S1 - Informatika, Universitas A</li>
+      <li>S2 - Ilmu Komputer, Universitas B</li>
+      <li>S3 - Computer Vision, Universitas C (sedang ditempuh)</li>
+    </ul>
+  </section>
+
+  <section id="research">
+    <h2>Riwayat Penelitian</h2>
+    <div class="tabs">
+      <button class="tablinks" onclick="openTab(event, 'cv')">Computer Vision</button>
+      <button class="tablinks" onclick="openTab(event, 'ai')">AI & Machine Learning</button>
+      <button class="tablinks" onclick="openTab(event, 'sensing')">Remote Sensing</button>
+    </div>
+
+    <div id="cv" class="tabcontent">
+      <h3>Computer Vision</h3>
+      <p>Tracking objek menggunakan YOLO dan Kalman Filter untuk analisis video olahraga.</p>
+    </div>
+
+    <div id="ai" class="tabcontent">
+      <h3>AI & Machine Learning</h3>
+      <p>Pengembangan model klasifikasi citra menggunakan CNN dan transfer learning.</p>
+    </div>
+
+    <div id="sensing" class="tabcontent">
+      <h3>Remote Sensing</h3>
+      <p>Analisis perubahan tutupan lahan menggunakan data satelit dan drone.</p>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portofolio Project</h2>
+    <ul>
+      <li>Sistem Deteksi Objek Drone untuk Pemantauan Lahan</li>
+      <li>Aplikasi Mobile Posyandu Lansia & Ibu Hamil</li>
+      <li>Web Analisis Performa Atlet Sepak Bola dengan Video Tracking</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Kontak Saya</h2>
+    <form>
+      <label for="name">Nama:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br>
+      <label for="message">Pesan:</label><br>
+      <textarea id="message" name="message"></textarea><br>
+      <input type="submit" value="Kirim">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hasanuddin Al-Habib</p>
+  </footer>
+
+  <script>
+    function openTab(evt, tabName) {
+      const contents = document.getElementsByClassName("tabcontent");
+      for (let i = 0; i < contents.length; i++) {
+        contents[i].style.display = "none";
+      }
+
+      const links = document.getElementsByClassName("tablinks");
+      for (let i = 0; i < links.length; i++) {
+        links[i].classList.remove("active");
+      }
+
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.classList.add("active");
+    }
+
+    // Default open
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelector(".tablinks").click();
+    });
+  </script>
+</body>
+</html>
