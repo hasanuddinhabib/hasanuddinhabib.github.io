@@ -1,128 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Your Name | Academic Profile</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
+  <header class="navbar">
+    <div class="container">
+      <h1>My Portfolio</h1>
+      <nav>
+        <div class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+<!--       <button id="darkModeToggle">🌓</button> -->
+    </div>
+  </header>
 
-<header class="navbar">
-  <div class="container">
-    <div class="brand">Your Name</div>
-    <nav id="nav">
-      <a href="#home" class="nav-link active">Home</a>
-      <a href="#about" class="nav-link">About</a>
-      <a href="#cv" class="nav-link">CV</a>
-      <a href="#publications" class="nav-link">Publications</a>
-      <a href="#projects" class="nav-link">Projects</a>
-      <a href="#contact" class="nav-link">Contact</a>
-    </nav>
-    <button id="darkToggle">🌙</button>
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-  </div>
-</header>
-
-<section id="home" class="section hero fade">
-  <div class="container hero-grid">
-    <img src="assets/profile.jpg" alt="Profile Photo">
-    <div>
-      <h1>Your Name</h1>
-      <p class="subtitle">
-        Lecturer | Data Science | Computer Vision Researcher
-      </p>
+  <section class="hero" style="margin: 10px;margin-left: 100px;margin-right: 100px;">
+    <div class="hero-content">
+      <span class="badge">Our Services</span>
+      <h1>Comprehensive<br>Financial<br><span>Solutions</span></h1>
       <p>
-        Faculty of Mathematics and Natural Sciences<br>
-        Universitas Negeri Surabaya
+        From tax optimization to business advisory, we provide end-to-end financial services that help businesses and individuals achieve their financial goals.
       </p>
-    </div>
-  </div>
-</section>
-
-<section id="about" class="section fade">
-  <div class="container">
-    <h2>About</h2>
-    <p>
-      I am a lecturer and researcher in Data Science focusing on computer vision,
-      object tracking, remote sensing, and intelligent systems for education and health.
-    </p>
-  </div>
-</section>
-
-<section id="cv" class="section fade">
-  <div class="container">
-    <h2>Curriculum Vitae</h2>
-
-    <h3 class="section-title">Education</h3>
-    <ul>
-      <li>Ph.D. Candidate in Computer Vision (Ongoing)</li>
-      <li>M.Sc. in Data Science</li>
-      <li>B.Sc. in Computer Science</li>
-    </ul>
-
-    <h3 class="section-title">Research Interests</h3>
-    <ul>
-      <li>Object Detection and Tracking</li>
-      <li>Vision Transformers</li>
-      <li>Remote Sensing & UAV Imaging</li>
-      <li>AI for Education and Healthcare</li>
-    </ul>
-  </div>
-</section>
-
-<section id="publications" class="section fade underline">
-  <div class="container">
-    <h2>Publications</h2>
-
-    <div class="paper">
-      <p>
-        <strong>Your Name</strong>, et al. (2024).  
-        <em>Real-Time Player Tracking Using YOLO and Kalman Filter.</em>  
-        International Journal of Computer Vision.
-      </p>
-      <a href="#" class="link-accent">View Publication</a>
+      <a href="#process" class="btn">Our Process ↓</a>
     </div>
 
-    <div class="paper">
-      <p>
-        <strong>Your Name</strong>, et al. (2023).  
-        <em>Vision Transformer for Remote Sensing Image Classification.</em>  
-        IEEE Conference Proceedings.
-      </p>
-      <a href="#" class="link-accent">View Publication</a>
+    <div class="track-record">
+      <h3>Our Track Record</h3>
+      <p class="subtext">Trusted by businesses nationwide</p>
+
+      <div class="stats">
+        <div><strong>500+</strong><span>Happy Clients</span></div>
+        <div><strong>15+</strong><span>Years Experience</span></div>
+        <div><strong>1200+</strong><span>Projects Completed</span></div>
+        <div><strong>98%</strong><span>Client Satisfaction</span></div>
+      </div>
+
+      <div class="services">
+        <h4>Core Services</h4>
+        <ul>
+          <li>• Tax Planning</li>
+          <li>• Advisory</li>
+          <li>• Auditing</li>
+          <li>• Compliance</li>
+        </ul>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="projects" class="section fade">
-  <div class="container">
-    <h2>Research Projects</h2>
+  
+  <section id="about" class="section container">
+    <h2>About Me</h2>
+    <p>Hello! I'm a researcher and developer passionate about innovation and impactful technology.</p>
+  </section>
 
-    <div class="card micro-card">
-      <h3>Sports Analytics System</h3>
-      <p>Multi-object tracking for football tactical analysis.</p>
+  <section id="education" class="section container">
+    <h2>Education</h2>
+    <p>Bachelor of Science in Computer Science - Example University</p>
+  </section>
+
+  <section id="research" class="section container">
+    <h2>Research</h2>
+    <p>Research in Computer Vision, AI for Social Good, and Environmental Sensing.</p>
+  </section>
+
+  <section id="portfolio" class="section container">
+    <h2>Portfolio</h2>
+    <div class="project">
+      <h3>Project A</h3>
+      <p>A web application for tracking environmental changes using drone imagery.</p>
     </div>
-
-    <div class="card micro-card">
-      <h3>Medical Data Platform</h3>
-      <p>Mobile application for elderly and maternal health monitoring.</p>
+    <div class="project">
+      <h3>Project B</h3>
+      <p>A deep learning model for recognizing player movement in sports videos.</p>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="contact" class="section fade">
-  <div class="container">
-    <h2>Contact</h2>
-    <p>Email: your.email@unesa.ac.id</p>
-    <p>Google Scholar | GitHub | ORCID</p>
-  </div>
-</section>
+  <section id="contact" class="section container">
+    <h2>Contact Me</h2>
+    <p>Email: yourname@example.com</p>
+    <a class="btn" href="mailto:yourname@example.com">Send Email</a>
+  </section>
 
-<footer>
-  <p>© 2025 Your Name | Academic Personal Page</p>
-</footer>
+  <footer class="footer">
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
 
-<script src="main.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
