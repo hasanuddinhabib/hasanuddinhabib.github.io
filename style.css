@@ -308,3 +308,42 @@ body {
   }
 }
 /* sampai sini our services */
+
+/* ================= CARDS ================= */
+.card,
+.paper {
+  background: var(--card-light);
+  padding: 1.6rem;
+  border-radius: 18px;
+  margin-bottom: 1.6rem;
+  box-shadow: 0 15px 40px rgba(37,99,235,0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover,
+.paper:hover {
+  transform: translateY(-6px);
+}
+
+body.dark .card,
+body.dark .paper {
+  background: #020617;
+  box-shadow: none;
+  border: 1px solid #1e293b;
+}
+
+.paper strong {
+  color: var(--blue-main);
+}
+
+/* ================= FADE ================= */
+.fade {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: 0.8s ease;
+}
+
+.fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
